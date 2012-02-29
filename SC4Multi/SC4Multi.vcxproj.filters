@@ -13,13 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\GameFuncs">
+      <UniqueIdentifier>{2f480702-0b50-457f-8066-d460d0721547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameFuncs">
+      <UniqueIdentifier>{376ad669-f9c6-48b2-98d2-ba76c62ee57c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Injection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGame.cpp">
+      <Filter>Source Files\GameFuncs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CGame.h">
+      <Filter>Header Files\GameFuncs</Filter>
+    </ClInclude>
+    <ClInclude Include="Injection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Shared.h">
       <Filter>Header Files</Filter>
     </ClInclude>
