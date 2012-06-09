@@ -1,6 +1,7 @@
 #include "Shared.h"
 #include "CGame.h"
 
+// TODO: Change to constants
 long CGame::GetCash()
 {
 	long cash = *(long *)( (*(long *)0x00b4418c) + 0x00000030 );
