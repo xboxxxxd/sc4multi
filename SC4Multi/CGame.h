@@ -1,6 +1,7 @@
 #include "Shared.h"
 
 #ifndef CGameDef
+
 	#define CGameDef
 	class CGame
 	{
@@ -48,4 +49,5 @@
 			static void EnableCheats();
 			static bool CheatsEnabled();
 	};
+
 #endif

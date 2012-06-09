@@ -12,8 +12,6 @@ BOOL WINAPI DllMain (HMODULE hDll, DWORD dwReason, LPVOID lpReserved)
 
 		CreateThread( NULL, NULL, entryPoint, NULL, NULL, NULL );
 	}
-	/*else if( dwReason == DLL_PROCESS_DETACH )
-		DetourRemove( (PBYTE)Real_Direct3DCreate8, (PBYTE)Hooked_Direct3DCreate8 );*/
 
     return TRUE;
 }

@@ -4,7 +4,7 @@
 
 DWORD WINAPI setTitle( LPVOID )
 {
-	HWND hHopefulWnd;
+	HWND hHopefulWnd = NULL;
 	while( !hHopefulWnd )
 	{
 		// Find the window instance of SC4

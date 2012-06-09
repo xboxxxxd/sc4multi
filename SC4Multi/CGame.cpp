@@ -1,7 +1,6 @@
 #include "Shared.h"
 #include "CGame.h"
 
-// TODO: Change to constants
 long CGame::GetCash()
 {
 	long cash = *(long *)( (*(long *)0x00b4418c) + 0x00000030 );
@@ -68,55 +67,20 @@ float CGame::GetTaxCO3()
 {
 }
 
-void CGame::SetCash( long cash ) { *(long *)( (*(long *)0x00b4418c) + 0x00000030 ) = cash; }
+void CGame::SetTaxIA( float fTaxAg )    {  }
+void CGame::SetTaxID( float fTaxDirt )  {  }
+void CGame::SetTaxIM( float fTaxManu )  {  }
+void CGame::SetTaxIHT( float fTaxTech ) {  }
 
-void CGame::SetTaxIA( float fTaxAg )
-{
-}
+void CGame::SetTaxR1( float fTaxPoor ) {  }
+void CGame::SetTaxR2( float fTaxMid )  {  }
+void CGame::SetTaxR3( float fTaxRich ) {  }
 
-void CGame::SetTaxID( float fTaxDirt )
-{
-}
-
-void CGame::SetTaxIM( float fTaxManu )
-{
-}
-
-void CGame::SetTaxIHT( float fTaxTech )
-{
-}
-
-void CGame::SetTaxR1( float fTaxPoor )
-{
-}
-
-void CGame::SetTaxR2( float fTaxMid )
-{
-}
-
-void CGame::SetTaxR3( float fTaxRich )
-{
-}
-
-void CGame::SetTaxCS1( float fTaxServPoor )
-{
-}
-
-void CGame::SetTaxCS2( float fTaxServMid )
-{
-}
-
-void CGame::SetTaxCS3( float fTaxServRich )
-{
-}
-
-void CGame::SetTaxCO2( float fTaxOfficeMid )
-{
-}
-
-void CGame::SetTaxCO3( float fTaxOfficeRich )
-{
-}
+void CGame::SetTaxCS1( float fTaxServPoor )   {  }
+void CGame::SetTaxCS2( float fTaxServMid )    {  }
+void CGame::SetTaxCS3( float fTaxServRich )   {  }
+void CGame::SetTaxCO2( float fTaxOfficeMid )  {  }
+void CGame::SetTaxCO3( float fTaxOfficeRich ) {  }
 
 void CGame::DisableCheats()
 {
@@ -129,3 +93,5 @@ void CGame::EnableCheats()
 bool CGame::CheatsEnabled()
 {
 }
+
+void CGame::SetCash( long cash ) { *(long *)( (*(long *)0x00b4418c) + 0x00000030 ) = cash; }
