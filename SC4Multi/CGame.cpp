@@ -1,23 +1,8 @@
 #include "Shared.h"
 #include "CGame.h"
 
-long CGame::GetCash()
-{
-	long cash = *(long *)( (*(long *)0x00b4418c) + 0x00000030 );
-	if( cash == NULL )
-		return SNULL;
-	
-	return cash;
-}
-
-int CGame::GetPopulation()
-{
-	int pop = *(int *)( (*(int *)0x00b441cc) + 0x000000a4 );
-	if( pop == NULL )
-		return SNULL;
-
-	return pop;
-}
+long CGame::GetCash()      { return *(long *)( (*(long *)0x00b4418c) + 0x00000030 ); }
+int CGame::GetPopulation() { return *(int *)( (*(int *)0x00b441cc) + 0x000000a4 ); }
 
 float CGame::GetTaxIA()
 {

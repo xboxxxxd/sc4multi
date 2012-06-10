@@ -36,6 +36,9 @@
     <ClCompile Include="COrdinance.cpp">
       <Filter>Source Files\GameFuncs</Filter>
     </ClCompile>
+    <ClCompile Include="netcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CGame.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="COrdinance.h">
       <Filter>Header Files\GameFuncs</Filter>
+    </ClInclude>
+    <ClInclude Include="netcode.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

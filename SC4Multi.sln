@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Launcher", "Launcher\Launch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SC4Multi", "SC4Multi\SC4Multi.vcxproj", "{98E825DC-E53F-4D02-9878-A778763E5697}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SC4Server", "SC4Server\SC4Server.vcxproj", "{509528CD-2B73-48AD-B0CA-CC6C44B85C8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{98E825DC-E53F-4D02-9878-A778763E5697}.Debug|Win32.Build.0 = Release|Win32
 		{98E825DC-E53F-4D02-9878-A778763E5697}.Release|Win32.ActiveCfg = Release|Win32
 		{98E825DC-E53F-4D02-9878-A778763E5697}.Release|Win32.Build.0 = Release|Win32
+		{509528CD-2B73-48AD-B0CA-CC6C44B85C8D}.Debug|Win32.ActiveCfg = Release|Win32
+		{509528CD-2B73-48AD-B0CA-CC6C44B85C8D}.Debug|Win32.Build.0 = Release|Win32
+		{509528CD-2B73-48AD-B0CA-CC6C44B85C8D}.Release|Win32.ActiveCfg = Release|Win32
+		{509528CD-2B73-48AD-B0CA-CC6C44B85C8D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

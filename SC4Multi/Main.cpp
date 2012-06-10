@@ -1,9 +1,9 @@
 #include "Shared.h"
 #include "Injection.h"
+#include "netcode.h"
 
 BOOL WINAPI DllMain (HMODULE hDll, DWORD dwReason, LPVOID lpReserved)
 {
-    DisableThreadLibraryCalls( hDll );
 	if( dwReason == DLL_PROCESS_ATTACH )
 	{
 		#ifdef DEBUG
@@ -11,6 +11,11 @@ BOOL WINAPI DllMain (HMODULE hDll, DWORD dwReason, LPVOID lpReserved)
 		#endif
 
 		CreateThread( NULL, NULL, entryPoint, NULL, NULL, NULL );
+	}
+	else if( dwReason == DLL_PROCESS_DETACH )
+	{
+		// Stop networking gracefully
+		StopRunningNet();
 	}
 
     return TRUE;
